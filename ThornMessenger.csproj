@@ -8,4 +8,26 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\Models\" />
+    <Folder Include="Core\Interfaces\" />
+    <Folder Include="Core\Factories\" />
+    <Folder Include="Core\Services\" />
+    <Folder Include="Infrastructure\Database\" />
+    <Folder Include="Presentation\Views\" />
+    <Folder Include="Presentation\ViewModels\" />
+    <Folder Include="Presentation\Styles\" />
+    <Folder Include="Presentation\Converters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="5.3.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+    <PackageReference Include="Serilog" Version="4.4.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+
 </Project>
