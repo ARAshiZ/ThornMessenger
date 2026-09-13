@@ -14,8 +14,6 @@
     <Folder Include="Core\Factories\" />
     <Folder Include="Core\Services\" />
     <Folder Include="Infrastructure\Database\" />
-    <Folder Include="Presentation\Views\" />
-    <Folder Include="Presentation\ViewModels\" />
     <Folder Include="Presentation\Styles\" />
     <Folder Include="Presentation\Converters\" />
   </ItemGroup>
