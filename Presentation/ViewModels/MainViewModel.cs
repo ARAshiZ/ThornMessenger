@@ -5,11 +5,14 @@ using System.Text;
 
 namespace ThornMessenger.Presentation.ViewModels
 {
-    public class MainViewModel : ObservableObject
+    public partial class MainViewModel : ObservableObject
     {
+        [ObservableProperty]
+        private object _currentViewModel;
+
         public MainViewModel()
         {
-
+            CurrentViewModel = new MainChatPanelViewModel();
         }
     }
 }

@@ -22,7 +22,9 @@ namespace ThornMessenger
             ConfigureServices(services);
             _serviceProvider = services.BuildServiceProvider();
 
+            var mainVM = _serviceProvider.GetRequiredService<MainViewModel>();
             var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+            mainWindow.DataContext = mainVM;
             mainWindow.Show();
 
         }

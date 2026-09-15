@@ -2,8 +2,12 @@
 <Application x:Class="ThornMessenger.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ThornMessenger">
+             xmlns:local="clr-namespace:ThornMessenger"
+             xmlns:views="clr-namespace:ThornMessenger.Presentation.Views"
+             xmlns:viewModels="clr-namespace:ThornMessenger.Presentation.ViewModels">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type viewModels:MainChatPanelViewModel}">
+            <views:MainChatPanelView/>
+        </DataTemplate>
     </Application.Resources>
 </Application>
